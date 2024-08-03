@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | My project (7)</title>
+    <title>Unity WebGL Player | 找寶藏7000</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
@@ -20,7 +20,7 @@
       <div id="unity-footer">
         <div id="unity-webgl-logo"></div>
         <div id="unity-fullscreen-button"></div>
-        <div id="unity-build-title">My project (7)</div>
+        <div id="unity-build-title">找寶藏7000</div>
       </div>
     </div>
     <script>
@@ -57,14 +57,14 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/555.loader.js";
+      var loaderUrl = buildUrl + "/3.loader.js";
       var config = {
-        dataUrl: buildUrl + "/555.data.unityweb",
-        frameworkUrl: buildUrl + "/555.framework.js.unityweb",
-        codeUrl: buildUrl + "/555.wasm.unityweb",
+        dataUrl: buildUrl + "/3.data.br",
+        frameworkUrl: buildUrl + "/3.framework.js.br",
+        codeUrl: buildUrl + "/3.wasm.br",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "My project (7)",
+        productName: "找寶藏7000",
         productVersion: "1.0",
         showBanner: unityShowBanner,
       };
@@ -108,7 +108,7 @@
               }).then((unityInstance) => {
                 loadingBar.style.display = "none";
                 fullscreenButton.onclick = () => {
-                  unityInstance.SetFullscreen(1);
+                  document.makeFullscreen('unity-container');
                 };
               }).catch((message) => {
                 alert(message);
